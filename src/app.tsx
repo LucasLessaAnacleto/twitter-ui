@@ -29,10 +29,10 @@ export function App(){
                         setRouter: setCurrentPath, 
                         hasRouteParam: true
                     },
-                    {
-                        path: "?",
-                        element: NotFound,     
-                    }
+                    // {
+                    //     path: "?",
+                    //     element: NotFound,     
+                    // }
                 ]} />
             </main>
         </div>
