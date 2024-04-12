@@ -3,7 +3,7 @@ import { Sidebar } from "./components/sidebar";
 import { useRouterDom } from "./components/use-router-dom";
 import { Timeline } from "./pages/timeline";
 import { TweetStatus } from "./pages/tweet-status";
-import { NotFound } from "./pages/not-found";
+// import { NotFound } from "./pages/not-found";
 import { Header } from "./components/header";
 import res from "./data/resolve-path";
 
