@@ -30,7 +30,7 @@ Os outros usuários podem comentar na sua publicação.
 
 É uma aplicação muito simples, portanto muitas funcionalidades que o tornaria um projeto mais interessante foi deixado de lado, como as interações com cada tweet postado, os botões de like, retweet e comentarios, não são clicáveis e os números são fictícios.
 
-Não possui um back-end, então os dados é apenas um array contendo as informações para gerar a interface, com dados fakes e randomizados gerados através da biblioteca "[faker.js](https://fakerjs.dev/)".
+Não possui um back-end, então os dados é apenas um array contendo as informações para gerar a interface, com dados fakes e randomizados gerados através da biblioteca [faker.js](https://fakerjs.dev/).
 
 Essa é uma aplicação construída em uma masterclass da rockeatseat.
 
@@ -138,7 +138,7 @@ Já é possível utilizar esse exemplo para explicar o último item do array de 
 
 ## Interface
 
-Você pode testar a aplicação [clicando aqui](https://github.com/LucasLessaAnacleto/).
+Você pode testar a aplicação [clicando aqui](https://lucaslessaanacleto.github.io/twitter-ui).
 
 Basicamente esse projeto é composto por duas páginas, sendo a principal a timeline das publicações e quando clica em algum tweet, onde é redirecionado para a página do tweet em si.
 

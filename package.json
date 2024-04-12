@@ -9,7 +9,7 @@
     "build": "tsc && vite build",
     "build:w": "tsc && vite watch build",
     "preview": "vite preview",
-    "predeploy": "",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
