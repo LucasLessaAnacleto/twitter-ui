@@ -1,0 +1,7 @@
+a.tweet-hashtag{
+    color: #0090f1;
+    cursor: pointer;
+}
+a.tweet-hashtag:hover{
+    text-decoration: underline;
+}

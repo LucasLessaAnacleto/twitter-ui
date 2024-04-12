@@ -1,0 +1,83 @@
+main .new-answer-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 2.4rem 2rem;
+    border-bottom: 1px solid var(--twitter-border);
+
+    label{
+        flex: 5;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        column-gap: 1.2rem;
+
+        img{
+            width: 5.6rem;
+            height: 5.6rem;
+            border-radius: 50%;
+        }
+    }
+    #answer-input{
+        flex: 1;
+        font-size: 2rem;
+        font-weight: 400;
+        resize: none;
+        margin: auto 0; 
+        height: 2.5rem;
+    }
+    #answer-input::placeholder{
+        color: #5B7083;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    button[type="submit"]{
+        /* flex: 1; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-left: auto;
+        background-color: var(--twitter-blue);
+        border-radius: 99px;
+        padding: 1.6rem 2.4rem; 
+        font-size: 1.6rem;
+        font-weight: 900;
+        color: white;
+        width: fit-content;
+        height: fit-content;
+    }
+    button[type="submit"]:hover{
+        filter: brightness(0.90);
+    }
+    button[disabled]{
+        opacity: 0.65;
+    }
+    button svg{
+        width: 2.4rem;
+        height: 2.4rem;
+        display: none;
+    }
+}
+
+@media (max-width: 780px) {
+    main .new-answer-form{
+        flex: none;
+    }
+    main .new-answer-form label textarea{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 560px) {
+    main .new-answer-form button span{
+        display: none;
+    }
+    main .new-answer-form button[type="submit"]{
+        padding: 1.2rem;
+    }
+    main .new-answer-form button svg{
+        display: block;
+    }
+}

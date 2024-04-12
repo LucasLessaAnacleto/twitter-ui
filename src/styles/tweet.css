@@ -1,0 +1,103 @@
+.tweet{
+    display: flex;
+    gap: 1.2rem;
+    border-bottom: 1px solid var(--twitter-border);
+    padding: 2.4rem 2rem 2rem 2rem;
+    cursor: pointer;
+
+    img{
+        width: 5.6rem;
+        height: 5.6rem;
+        border-radius: 50%;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    article .tweet-content{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+
+        .tweet-profile{
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            
+            .tweet-username{
+                color: #0F1419;
+                font-weight: 700;
+                font-size: 1.6rem;
+            }
+            .tweet-atsign{
+                color: #89A2B8;
+                font-weight: 500;
+                font-size: 1.4rem;
+            }
+        }
+        p{
+            color: #000;
+            font-size: 1.6rem;
+        }
+    }
+    article .tweet-interaction{
+        display: flex;
+        gap: 4.8rem;
+
+        span, button svg{transition: color 0.2s ease;}
+
+        button{
+            display: flex;
+            align-items: center;
+            column-gap: 0.7rem;
+            background-color: transparent;
+            color: #89A2B8;
+            font-size: 1.4rem;
+
+            .sob-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                .icon-hover{
+                    position: absolute;
+                    top: -30%;
+                    left: -30%;
+                    width: 160%;
+                    height: 160%;
+                    z-index: 0;
+                    border-radius: 50%;
+                    background-color: transparent;
+                }
+                svg{
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    z-index: 30;
+                }
+            }   
+        }
+        button:hover .icon-hover{
+            background-color: #def1eb;
+        }
+        .tweet-icon-comentary:hover, 
+        .tweet-icon-comentary:hover svg{
+            color: var(--twitter-blue);
+        }
+        .tweet-icon-retweet:hover,
+        .tweet-icon-retweet:hover svg {
+            color: #00b163;
+        }
+        .tweet-icon-like:hover,
+        .tweet-icon-like:hover svg{
+            color: #f91880;
+        }
+    }
+}
+
+.tweet:hover{
+    background-color: #f7f7f7;
+}

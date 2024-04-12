@@ -1,0 +1,27 @@
+.not-found{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20rem 0;
+    color: #2b3946;
+
+    span{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+
+        p{
+            color: #5f7385;
+            font-weight: 700;
+            font-size: 2rem;
+            max-width: 70%;
+
+            strong{
+                color: #333d46;
+            }
+        }
+    }
+}

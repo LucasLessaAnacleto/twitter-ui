@@ -1,0 +1,19 @@
+.layout{
+    margin: 0 auto;
+    max-width: 1200px;
+
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    min-height: 100vh;
+
+    main{
+        border-left: 1px solid var(--twitter-border);
+        border-right: 1px solid var(--twitter-border); 
+    }
+}
+
+@media (max-width: 780px) {
+    .layout{
+        grid-template-columns: 80px 1fr;
+    }
+}
